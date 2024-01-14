@@ -25,7 +25,7 @@
 }
 /* nav Style */
 
-.nav-container{
+.nav-container,.nav-items-text{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -223,4 +223,40 @@
     font-family: Manrope;
     font-size: 14px;
     font-weight: 700;
+}
+@media screen and (max-width:575px) {
+    .icon-container,
+    .nav-container,
+    .featured,
+    .nav-items-text,
+    .nav-items-icon,
+    .nav-items-container{
+       flex-direction: column;
+    }
+  .banner{
+      flex-direction: column-reverse;
+      width: 100%;
+  }
+  .banner-img{
+    width: 100%;
+    padding: 30px 20px;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat:no-repeat
+}
+  .banner-img>img{
+      width: 60%;
+  }
+    .nav-container{
+        padding: 20px;
+    }
+    .nav-title{
+        width: 80%;
+    }
+    .icon-container>div>img{
+        padding: 20px 0;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
