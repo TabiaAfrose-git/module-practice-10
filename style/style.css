@@ -66,34 +66,6 @@
 }
 /* end nav */
 
-@media screen and (max-width:600px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .nav-container,
-    .nav-items-text,
-    .nav-items-icon,
-    .nav-items-container{
-        flex-direction: column;
-        margin: 20px;
-        padding: 10px;
-
-    }
-    .nav-items-text,
-    .nav-items-icon{
-        margin: 0;
-        padding: 0;
-    }
-    .nav-items-text>a,
-    .nav-icon-1,
-    .nav-icon-2,
-    .nav-items-icon{
-        padding-right:30px ;
-        margin: 20px;
-    }
-}
-
 /* .......... banner.........*/
 .banner{
     display: flex;
@@ -129,6 +101,7 @@
     background-image: url(../images/Circle\ design.svg);
     background-repeat:no-repeat
 }
+
 /* icon */
 .icon-container{
     display: flex;
@@ -258,4 +231,84 @@
 }
 .hiden{
     display: none;
+}
+@media screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+    .nav-container,
+    .nav-items-text,
+    .nav-items-icon,
+    .nav-items-container{
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+
+    }
+    .nav-items-text,
+    .nav-items-icon{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-items-text>a,
+    .nav-icon-1,
+    .nav-icon-2,
+    .nav-items-icon{
+        padding-right:30px ;
+        margin: 20px;
+    }
+    .featured,
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .banner-text{
+        height: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .text-description,
+    .btn-1{
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .icon-container{
+        flex-wrap: wrap;
+    }
+    .icon-container>div>img{
+        width: 44.41px;
+        height: 17.747px;
+        margin: 20px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .card{
+        width: 90%;
+        height: 90%;
+
+
+    }
+    .featured-img>img{
+        width: 100%;
+    }
+    .featured-text-container,
+    .featured-discription,
+    .btn-2{
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+
 }
