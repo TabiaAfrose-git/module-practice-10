@@ -25,7 +25,9 @@
 }
 /* nav Style */
 
-.nav-container,.nav-items-text{
+.nav-container,
+.nav-items-text,
+.nav-items-icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,6 +64,36 @@
     height: 2em;
 
 }
+/* end nav */
+
+@media screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-container,
+    .nav-items-text,
+    .nav-items-icon,
+    .nav-items-container{
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+
+    }
+    .nav-items-text,
+    .nav-items-icon{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-items-text>a,
+    .nav-icon-1,
+    .nav-icon-2,
+    .nav-items-icon{
+        padding-right:30px ;
+        margin: 20px;
+    }
+}
+
 /* .......... banner.........*/
 .banner{
     display: flex;
@@ -224,39 +256,6 @@
     font-size: 14px;
     font-weight: 700;
 }
-@media screen and (max-width:575px) {
-    .icon-container,
-    .nav-container,
-    .featured,
-    .nav-items-text,
-    .nav-items-icon,
-    .nav-items-container{
-       flex-direction: column;
-    }
-  .banner{
-      flex-direction: column-reverse;
-      width: 100%;
-  }
-  .banner-img{
-    width: 100%;
-    padding: 30px 20px;
-    background-image: url(../images/Circle\ design.svg);
-    background-repeat:no-repeat
-}
-  .banner-img>img{
-      width: 60%;
-  }
-    .nav-container{
-        padding: 20px;
-    }
-    .nav-title{
-        width: 80%;
-    }
-    .icon-container>div>img{
-        padding: 20px 0;
-    }
-    .card-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-
+.hiden{
+    display: none;
 }
